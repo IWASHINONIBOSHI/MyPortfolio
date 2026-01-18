@@ -33,7 +33,15 @@
 ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: row; /* 基本は横並び */
+  justify-content: center; /* 中央揃え */
+  gap: 20px; /* 隣との間隔を20px空ける */
 }
-li {
-  margin: 10px 0;
+/* ↓スマホ用（600px以下）の条件分岐↓  */
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column; /* 縦積みに変更 */
+    gap: 10px; /* 間隔を少し狭める */
+  }
 }
