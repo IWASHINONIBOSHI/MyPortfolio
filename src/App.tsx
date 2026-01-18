@@ -9,7 +9,7 @@ function App() {
         <h1>自己紹介兼ポートフォリオ</h1>
       </header>
 
-      {/*body*//}
+      {/*body*/}
       <main className="site-main">
         <h2>自己紹介</h2>
         <p>いわしです。お絵描きを専攻しています。</p>
