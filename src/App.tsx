@@ -4,12 +4,12 @@ import './App.css'
 function App() {
   return (
     <div className="container">
-      {/* 1. ヘッダー */}
+      {/*header*/}
       <header className="site-header">
         <h1>自己紹介兼ポートフォリオ</h1>
       </header>
 
-      {/* 2. メイン */}
+      {/*body*//}
       <main className="site-main">
         <h2>自己紹介</h2>
         <p>いわしです。お絵描きを専攻しています。</p>
@@ -37,7 +37,7 @@ function App() {
         </div>
       </main>
 
-      {/* 3. フッター */}
+      {/*Footer*/}
       <footer className="site-footer">
         <p>&copy; {new Date().getFullYear()} Iwamoto</p>
       </footer>
