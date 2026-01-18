@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules # ホスト側のnode_modulesと混ざらないようにする
+    environment:
+      - CHOKIDAR_USEPOLLING=true # ファイル変更検知を確実にする設定

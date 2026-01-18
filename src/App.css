@@ -1,0 +1,39 @@
+.container {
+  max-width: 800px; /* 横幅を広がりすぎないように制限 */
+  margin: 0 auto;   /* 画面の中央に寄せる */
+  padding: 20px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* ヘッダー */
+.site-header {
+  padding: 40px 0;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+/* メインコンテンツ */
+.site-main {
+  padding: 60px 0;
+  min-height: 50vh; /* 中身が少なくてもある程度の高さを確保 */
+  text-align: center;
+}
+
+/* フッター */
+.site-footer {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+/* リストの装飾を消す */
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 10px 0;
+}
