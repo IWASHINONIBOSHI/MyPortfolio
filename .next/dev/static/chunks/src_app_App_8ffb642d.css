@@ -1,0 +1,46 @@
+/* [project]/src/app/App.css [app-client] (css) */
+.container {
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.site-header {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding: 40px 0;
+}
+
+.site-main {
+  text-align: center;
+  min-height: 50vh;
+  padding: 60px 0;
+}
+
+.site-footer {
+  text-align: center;
+  color: #888;
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+  font-size: .8rem;
+}
+
+ul {
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=src_app_App_8ffb642d.css.map*/

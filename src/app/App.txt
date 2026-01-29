@@ -1,0 +1,138 @@
+// src/App.tsx
+import { useState } from 'react';
+import './App.css';
+
+function App() {
+  // 現在のページ管理 (初期値： 'home')
+  const [page, setPage] = useState<'home' | 'knot'>('home');
+
+  return (
+    <div className="container">
+      {/*header*/}
+      <header className="site-header">
+        <h1>自己紹介兼ポートフォリオ</h1>
+      </header>
+
+      {/*body*/}
+      <main className="site-main">
+        {/* page変数 'knot'➡計算画面を表示 */}
+        {page === 'knot' && (
+          <div>
+            <h2>結び目計算</h2>
+            <p>Python連携画面です。</p>
+            <p>ここにAlexander多項式の計算機能が入ります。</p>
+
+            <div style={{ marginTop: '30px' }}>
+              <button 
+                onClick={() => setPage('home')}
+                style={{ padding: '10px 20px', cursor: 'pointer' }}
+              >
+                &larr; ホームに戻る
+              </button>
+            </div>
+          </div>
+        )}
+        {/* page変数 'home' ➡ポートフォリオ*/}
+        {page === 'home' && (
+          <>
+            <h2>自己紹介</h2>
+            <p>IWASHINONIBOSHIです。</p>
+            <p>現在結び目理論（の細かいところ）を専攻しています。</p>
+            <p>開発もどきをしています。ものすごい初心者です。</p>
+            
+            <h3>つくったもの</h3>
+            <ul style={{ color: 'black' }}>
+              <li>右クリックで文字数をカウントするgoogle chrome extension</li>
+              <li>TypeScriptで作った時刻表アプリケーション</li>
+              <li>下のAlexander多項式の根を計算するもの</li>
+            </ul>
+
+            <div style={{ marginTop: '40px' }}>
+              <h3>Links(No links are available. sorry!)</h3>
+              <ul>
+                <li>
+                  <a href="" target="_blank" rel="noreferrer">
+                    GitHub
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank" rel="noreferrer">
+                    X (Twitter)
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* アレクサンダー多項式の根計算の方 */}
+            <div style={{ marginTop: '50px', borderTop: '1px solid #ddd', paddingTop: '20px' }}>
+              <p>▼ 開発中の機能</p>
+              <button 
+                onClick={() => setPage('knot')}
+                style={{ padding: '10px 20px', cursor: 'pointer' }}
+              >
+                アレクサンダー多項式の根計算ページ！ &rarr;
+              </button>
+            </div>
+          </>
+        )}
+
+        
+
+      </main>
+
+      {/*Footer*/}
+      <footer className="site-footer">
+        <p>&copy; {new Date().getFullYear()} Iwamoto</p>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
+
+
+2 daime
+
+import Link from 'next/link';
+
+export default function Home() {
+  return (
+    <>
+      <h2>自己紹介</h2>
+      <p>いわしです。お絵描きを専攻しています。</p>
+      <p>開発もどきをしています。ものすごい初心者です。</p>
+
+      <h3>つくったもの</h3>
+      <ul className="works-list">
+        <li>
+          <Link href="/works/extension" className="text-blue-600 hover:underline">
+            右クリックで文字数をカウントするgoogle chrome extension &rarr;
+          </Link>
+        </li>
+        <li>
+          <Link href="/works/timetable" className="text-blue-600 hover:underline">
+            TypeScriptで作った時刻表アプリケーション &rarr;
+          </Link>
+        </li>
+      </ul>
+
+      <div style={{ marginTop: '40px' }}>
+        <h3>Links</h3>
+        <ul>
+          <li><a href="" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="" target="_blank" rel="noreferrer">X (Twitter)</a></li>
+        </ul>
+      </div>
+
+      <div style={{ marginTop: '50px', borderTop: '1px solid #ddd', paddingTop: '20px' }}>
+        <p>▼ 開発中の機能</p>
+        <Link 
+          href="/knot"
+          className="inline-block px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        >
+          Alexander多項式の根を計算する (Python連携) &rarr;
+        </Link>
+      </div>
+    </>
+  );
+}

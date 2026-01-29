@@ -1,0 +1,146 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+.container {
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.site-header {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding: 40px 0;
+}
+
+.site-main {
+  text-align: center;
+  min-height: 50vh;
+  padding: 60px 0;
+}
+
+.site-footer {
+  text-align: center;
+  color: #888;
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+  font-size: .8rem;
+}
+
+ul {
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+:root {
+  --lightningcss-light: initial;
+  --lightningcss-dark: ;
+  color-scheme: light dark;
+  color: #ffffffde;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #5563db;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --lightningcss-light: ;
+    --lightningcss-dark: initial;
+  }
+}
+
+h1 {
+  color: #a1b824;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  color: #bea533;
+  font-size: 2.4em;
+  line-height: 1.2;
+}
+
+h3 {
+  color: #bea533;
+  font-size: 1.8em;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: .8emm;
+  color: #000;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+a {
+  color: #000;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #a1b824;
+}
+
+body {
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  background-color: #1a1a1a;
+  border: 1px solid #0000;
+  border-radius: 8px;
+  padding: .6em 1.2em;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  transition: border-color .25s;
+}
+
+button:hover {
+  border-color: #5bdb86;
+}
+
+button:focus, button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #fff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/*# sourceMappingURL=src_app_globals_91e4631d.css.map*/

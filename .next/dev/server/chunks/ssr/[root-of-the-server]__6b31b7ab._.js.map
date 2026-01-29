@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/MyPortfolio/src/app/works/timetable/page.tsx"],"sourcesContent":["import Link from 'next/link';\n\nexport default function TimetablePage() {\n  return (\n    <div>\n      <h2>時刻表アプリケーション</h2>\n      <p>TypeScriptを用いて作成した、バスや電車の時刻表管理アプリです。</p>\n      \n      <div style={{ margin: '30px 0', padding: '20px', backgroundColor: '#f5f5f5', borderRadius: '8px' }}>\n        <p><strong>【開発技術】</strong> React, TypeScript</p>\n        <p><strong>【特徴】</strong> オフラインでも動作するようにPWA化を検討中です。</p>\n      </div>\n\n      <Link href=\"/\" style={{ color: '#666', textDecoration: 'underline' }}>\n        &larr; ホームに戻る\n      </Link>\n    </div>\n  );\n}"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;0BAEH,8OAAC;gBAAI,OAAO;oBAAE,QAAQ;oBAAU,SAAS;oBAAQ,iBAAiB;oBAAW,cAAc;gBAAM;;kCAC/F,8OAAC;;0CAAE,8OAAC;0CAAO;;;;;;4BAAe;;;;;;;kCAC1B,8OAAC;;0CAAE,8OAAC;0CAAO;;;;;;4BAAa;;;;;;;;;;;;;0BAG1B,8OAAC,0LAAI;gBAAC,MAAK;gBAAI,OAAO;oBAAE,OAAO;oBAAQ,gBAAgB;gBAAY;0BAAG;;;;;;;;;;;;AAK5E"}}]
+}
