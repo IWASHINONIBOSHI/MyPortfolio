@@ -35,7 +35,7 @@ export default function Home() {
       <div style={{ marginTop: '50px', borderTop: '1px solid #ddd', paddingTop: '20px' }}>
         <p>▼ 開発中の機能</p>
         <Link 
-          href="/knot"
+          href="/works/knot"
           style={{ 
             display: 'inline-block',
             padding: '10px 20px', 
