@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <h2>自己紹介</h2>
-      <p>いわしです。お絵描きを専攻しています。</p>
+      <p>IWASHINONIBOSHIです。結び目理論を専攻しています。</p>
       <p>開発もどきをしています。ものすごい初心者です。</p>
 
       <h3>つくったもの</h3>
