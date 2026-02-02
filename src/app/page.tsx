@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <h2>自己紹介</h2>
       <p>IWASHINONIBOSHIです。結び目理論を専攻しています。</p>
-      <p>開発もどきをしています。ものすごい初心者です。</p>
+      <p>TypeScriptでWebアプリなどの開発やpythonで実際の研究内容をいじるなどしています。初心者です。</p>
 
       <h3>つくったもの</h3>
       {/* リストのデザイン調整 */}
