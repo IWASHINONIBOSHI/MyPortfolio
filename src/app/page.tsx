@@ -1,50 +1,42 @@
-// src/app/page.tsx
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
       <h2>自己紹介</h2>
       <p>IWASHINONIBOSHIです。結び目理論を専攻しています。</p>
-      <p>TypeScriptでWebアプリなどの開発やpythonで実際の研究内容をいじるなどしています。初心者です。</p>
+      <p>TypeScriptでWebアプリなどの開発や、Pythonで実際の研究内容をシミュレーションするなどしています。</p>
 
       <h3>つくったもの</h3>
-      {/* リストのデザイン調整 */}
-      <ul style={{ color: 'black', lineHeight: '2' }}>
-        <li>
-          <Link href="/works/extension" style={{ color: 'blue', textDecoration: 'underline' }}>
-            右クリックで文字数をカウントするgoogle chrome extension &rarr;
+      {/* globals.css の .works-list を適用 */}
+      <div className="works-list">
+        <p>
+          <Link href="/works/extension" style={{ textDecoration: 'underline', color: 'var(--primary)' }}>
+            右クリックで文字数をカウントする Google Chrome Extension &rarr;
           </Link>
-        </li>
-        <li>
-          <Link href="/works/timetable" style={{ color: 'blue', textDecoration: 'underline' }}>
+        </p>
+        <p>
+          <Link href="/works/timetable" style={{ textDecoration: 'underline', color: 'var(--primary)' }}>
             TypeScriptで作った時刻表アプリケーション &rarr;
           </Link>
-        </li>
-      </ul>
+        </p>
+      </div>
 
       <div style={{ marginTop: '40px' }}>
-        <h3>Links (No links are available. sorry!)</h3>
-        <ul>
-          <li><a href="" target="_blank" rel="noreferrer">GitHub</a></li>
-          <li><a href="" target="_blank" rel="noreferrer">X (Twitter)</a></li>
-        </ul>
+        <h3>Links</h3>
+        <p className="works-list">
+          <a href="https://github.com/IWASHINONIBOSHI" target="_blank" rel="noreferrer">GitHub</a>
+          <span style={{ margin: '0 10px' }}>/</span>
+          <a href="#" target="_blank" rel="noreferrer">X (Twitter)</a>
+        </p>
       </div>
 
       {/* 結び目計算へのリンクエリア */}
-      <div style={{ marginTop: '50px', borderTop: '1px solid #ddd', paddingTop: '20px' }}>
+      <div style={{ marginTop: '50px', borderTop: '1px solid var(--border)', paddingTop: '20px' }}>
         <p>▼ 開発中の機能</p>
-        <Link 
-          href="/works/knot"
-          style={{ 
-            display: 'inline-block',
-            padding: '10px 20px', 
-            backgroundColor: '#0070f3', 
-            color: 'white', 
-            textDecoration: 'none', 
-            borderRadius: '5px' 
-          }}
-        >
+        {/* globals.css で定義したボタン風リンククラスを使用 */}
+        <Link href="/knot" className="button-link">
           Alexander多項式の根を計算する (Python連携) &rarr;
         </Link>
       </div>

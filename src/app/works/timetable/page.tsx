@@ -6,12 +6,19 @@ export default function TimetablePage() {
       <h2>時刻表アプリケーション</h2>
       <p>TypeScriptを用いて作成した、バスや電車の時刻表管理アプリです。</p>
       
-      <div style={{ margin: '30px 0', padding: '20px', backgroundColor: '#f5f5f5', borderRadius: '8px' }}>
-        <p><strong>【開発技術】</strong> React, TypeScript</p>
-        <p><strong>【特徴】</strong> オフラインでも動作するようにPWA化を検討中です。</p>
+      <div style={{ margin: '30px 0', padding: '30px', backgroundColor: 'var(--secondary-bg)', borderRadius: '8px' }}>
+        <div style={{ marginBottom: '15px' }}>
+          <strong>【開発技術】</strong>
+          <p style={{ margin: '5px 0 0 0' }}>React, TypeScript</p>
+        </div>
+        
+        <div>
+          <strong>【特徴】</strong>
+          <p style={{ margin: '5px 0 0 0' }}>ネットワークがない環境でも時刻を確認できるよう、PWA（Progressive Web App）化を検討中です。</p>
+        </div>
       </div>
 
-      <Link href="/" style={{ color: '#666', textDecoration: 'underline' }}>
+      <Link href="/" style={{ color: '#888', textDecoration: 'underline' }}>
         &larr; ホームに戻る
       </Link>
     </div>
