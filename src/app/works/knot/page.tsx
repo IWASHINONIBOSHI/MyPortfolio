@@ -74,7 +74,7 @@ export default function KnotPage() {
           </button>
         </div>
 
-        {error && <p style={{ color: 'red', fontWeight: 'bold' }}>{error}</p>}
+        {error && <p style={{ color: 'rgb(48, 7, 143)', fontWeight: 'bold' }}>{error}</p>}
 
         {result && result.roots && (
           <div style={{ backgroundColor: 'white', padding: '20px', borderRadius: '6px', border: '1px solid var(--border)' }}>
