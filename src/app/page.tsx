@@ -36,7 +36,7 @@ export default function Home() {
       <div style={{ marginTop: '50px', borderTop: '1px solid var(--border)', paddingTop: '20px' }}>
         <p>▼ 開発中の機能</p>
         {/* globals.css で定義したボタン風リンククラスを使用 */}
-        <Link href="/knot" className="button-link">
+        <Link href="/works/knot" className="button-link">
           Alexander多項式の根を計算する (Python連携) &rarr;
         </Link>
       </div>
